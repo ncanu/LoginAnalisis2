@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using logica;
 namespace prototipo_login_2
 {
     public partial class Form1 : Form
@@ -45,6 +45,8 @@ namespace prototipo_login_2
             else
             {
                 MessageBox.Show("Usuario o contraseña incorrecta");
+                capaLogicaB cl = new capaLogicaB();
+                cl.insertBitacora("Error Conexion");
             }
 
 
