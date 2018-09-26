@@ -35,6 +35,8 @@ namespace prototipo_login_2
             if (username == "" || password == "")
             {
                 MessageBox.Show("Los campos son obligatorios");
+                capaLogicaB cl = new capaLogicaB();
+                cl.insertBitacora("Error Escritura");
             }
 
 
@@ -52,5 +54,9 @@ namespace prototipo_login_2
 
         }
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
